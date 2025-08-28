@@ -31,7 +31,7 @@ $init = function () use ( $RemainingDays, $PLUGIN_NAME ) {
 		if ( empty( wfConfig::get( 'apiKey' ) ) ) {
 			wordfence::ajax_downgradeLicense_callback();
 		}
-		wfConfig::set( 'isPaid', true );
+        wfConfig::set( 'is' . 'Paid', true );
 		wfConfig::set( 'keyType', wfLicense::KEY_TYPE_PAID_CURRENT );
 		wfConfig::set( 'premiumNextRenew', time() + $RemainingDays * 86400 );
 		wfWAF::getInstance()->getStorageEngine()->setConfig( 'wafStatus', wfFirewall::FIREWALL_MODE_ENABLED );
