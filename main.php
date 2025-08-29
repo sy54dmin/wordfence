@@ -4,7 +4,7 @@
  * Plugin Name:       Wordfence Security Activ@tor
  * Plugin URI:        https://bit.ly/wf-act
  * Description:       Wordfence Security Plugin Activ@tor 🔥 (The Game has Just Begun...)
- * Version:           1.5.0
+ * Version:           1.5.1
  * Requires at least: 5.9.0
  * Requires PHP:      7.2
  * Author:            moh@medhk2
@@ -52,7 +52,7 @@ $init = function () use ( $RemainingDays, $PLUGIN_NAME ) {
 };
 
 add_action( 'plugins_loaded', function () use ( $RemainingDays, $init ) {
-    if ( ! class_exists( 'wfConfig' ) ) {
+    if ( class_exists( 'wfConfig' ) ) {
         $init();
     }
     if ( class_exists( 'wfLicense' ) ) {
