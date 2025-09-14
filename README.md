@@ -1,6 +1,3 @@
-<p align="center"><img src="https://raw.githubusercontent.com/wp-activators/.github/refs/heads/main/images/FreePalestine.png" height="250"></p>
-
----
 
 ## ⚠️ Disclaimer ⚠️
 
